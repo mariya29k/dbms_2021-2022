@@ -1,0 +1,59 @@
+SET SCHEMA DB2SAMPLE;
+
+-- Problem 1
+-- For employees whose salary, increased by 5 percent, is less than or equal to
+-- $20,000, list the following:
+--  • Last name
+--  • Current Salary
+--  • Salary increased by 5 percent
+--  • Monthly salary increased by 5 percent
+-- Use the following column names for the two generated columns:
+-- INC-Y-SALARY and INC-M-SALARY Use the proper conversion function to display
+-- the increased salary and monthly salary with two of the digits to the right of the
+-- decimal point. Sort the results by annual salary.
+-- Problem 2
+-- All employees with an education level of 18 or 20 will receive a salary increase of
+-- $1,200 and their bonus will be cut in half. List last name, education level, new salary,
+-- and new bonus for these employees. Display the new bonus with two digits to the
+-- right of the decimal point.
+-- Use the column names NEW-SALARY and NEW-BONUS for the generated
+-- columns.
+-- Employees with an education level of 20 should be listed first. For employees with
+-- the same education level, sort the list by salary.
+-- Problem 3
+-- The salary will be decreased by $1,000 for all employees matching the following
+-- criteria:
+--  • They belong to department D11
+--  • Their salary is more than or equal to 80 percent of $20,000
+--  • Their salary is less than or equal to 120 percent of $20,000
+-- Use the name DECR-SALARY for the generated column.
+-- List department number, last name, salary, and decreased salary. Sort the result by
+-- salary
+-- y Problem 4
+-- Produce a list of all employees in department D11 that have an income (sum of
+-- salary, commission, and bonus) that is greater than their salary increased by 10
+-- percent.
+-- Name the generated column INCOME.
+-- List department number, last name, and income. Sort the result in descending order
+-- by income.
+-- For this problem assume that all employees have non-null salaries, commissions,
+-- and bonuses.
+-- Problem 5
+-- List all departments that have no manager assigned. List department number,
+-- department name, and manager number. Replace unknown manager numbers with
+-- the word UNKNOWN and name the column MGRNO.
+-- Problem 6
+-- List the project number and major project number for all projects that have a project
+-- number beginning with MA. If the major project number is unknown, display the text
+-- 'MAIN PROJECT.'
+-- Name the derived column MAJOR PROJECT.
+-- Sequence the results by PROJNO.
+-- Problem 7
+-- List all employees who were younger than 25 when they joined the company.
+-- List their employee number, last name, and age when they joined the company.
+-- Name the derived column AGE.
+-- Sort the result by age and then by employee number.
+-- Problem 8
+-- Provide a list of all projects which ended on December 1, 1982. Display the year and
+-- month of the starting date and the project number. Sort the result by project number.
+-- Name the derived columns YEAR and MONTH.
