@@ -1,0 +1,41 @@
+SET SCHEMA DB2SAMPLE;
+
+-- Problem 1
+-- Retrieve all employees who are not involved in a project. Not involved in a project
+-- are those employees who have no row in the EMP_ACT table. Display employee
+-- number, last name, and department name.
+-- Problem 2
+-- Retrieve all employees whose yearly salary is more than the average salary of the
+-- employees in their department. For example, if the average yearly salary for
+-- department E11 is 20998, show all people in department E11 whose individual
+-- salary is higher than 20998. Display department number, employee number, and
+-- yearly salary. Sort the result by department number and employee number.
+-- Problem 3
+-- Retrieve all departments having the same number of employees as department
+-- A00. List department number and number of employees. Department A00 should
+-- not be part of the result.
+-- Problem 4
+-- Display employee number, last name, salary, and department number of employees
+-- who earn more than at least one employee in department D11. Employees in
+-- department D11 should not be included in the result. In other words, report on any
+-- employees in departments other than D11 whose individual yearly salary is higher
+-- than that of at least one employee of department D11. List the employees in
+-- employee number sequence.
+-- Problem 5
+-- Display employee number, last name, salary, and department number of all
+-- employees who earn more than everybody belonging to department D11.
+-- Employees in department D11 should not be included in the result. In other words,
+-- report on all employees in departments other than D11 whose individual yearly
+-- salary is higher than that of every employee in department D11. List the employees
+-- in employee number sequence.
+-- Problem 6
+-- Display employee number, last name, and number of activities of the employee with
+-- the largest number of activities. Each activity is stored as one row in the EMP_ACT
+-- table.
+-- Problem 7
+-- Display employee number, last name, and activity number of all activities in the
+-- EMP_ACT table. However, the list should only be produced if there were any
+-- activities in 1982.
+-- Note: The EMP_ACT table in the Sample database of Windows has a duplicate row for
+-- employee number ‘000020’. This may effect the result.
+
